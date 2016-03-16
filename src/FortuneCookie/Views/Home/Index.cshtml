@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="FortuneCookie">
+<head>
+    <title></title>
+
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/ngapp/app.js"></script>
+    <link rel ="stylesheet" href="~/css/FortuneCookie.css" />
+</head>
+<body>
+
+    <div ng-controller="fortuneController as fCC">
+
+        <center> <button ng-click="fCC.randomFortune()">Get Fortune</button></center>
+
+        <p>{{fCC.fortunes}}</p>
+
+        </div>
+
+</body>
+</html>
